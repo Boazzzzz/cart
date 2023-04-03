@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>購物車</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <header>
+         <h1>我的商店</h1>
+         <nav>
+            <ul>
+               <li><a href="#">首頁</a></li>
+               <li><a href="#">商品</a></li>
+               <li><a href="#">購物車</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section id="products">
+            <h2>商品列表</h2>
+            <div class="product">
+               <img src="https://via.placeholder.com/150" alt="商品一" />
+               <h3>商品一</h3>
+               <p>價格: $10</p>
+               <button class="add-to-cart" data-name="商品一" data-price="10">
+                  加入購物車
+               </button>
+            </div>
+            <div class="product">
+               <img src="https://via.placeholder.com/150" alt="商品二" />
+               <h3>商品二</h3>
+               <p>價格: $20</p>
+               <button class="add-to-cart" data-name="商品二" data-price="20">
+                  加入購物車
+               </button>
+            </div>
+            <div class="product">
+               <img src="https://via.placeholder.com/150" alt="商品三" />
+               <h3>商品三</h3>
+               <p>價格: $30</p>
+               <button class="add-to-cart" data-name="商品三" data-price="30">
+                  加入購物車
+               </button>
+            </div>
+         </section>
+         <section id="cart">
+            <h2>購物車</h2>
+            <table>
+               <thead>
+                  <tr>
+                     <th>商品</th>
+                     <th>價格</th>
+                     <th>數量</th>
+                     <th>總價</th>
+                     <th></th>
+                  </tr>
+               </thead>
+               <tbody id="cart-body"></tbody>
+               <tfoot>
+                  <tr>
+                     <td colspan="3">總價</td>
+                     <td id="cart-total-price">$0</td>
+                     <td><button id="clear-cart">清空購物車</button></td>
+                  </tr>
+               </tfoot>
+            </table>
+         </section>
+      </main>
+      <script src="scrpit.js"></script>
+   </body>
+</html>
